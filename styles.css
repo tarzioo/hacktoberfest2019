@@ -1,0 +1,58 @@
+.can-all {
+    position: absolute;
+    width: 300px;
+    height:300px;
+
+}
+.can-lid {
+    width: 35%;
+    height: 7%;
+    border-radius: 70%;
+    background-color: lightgray;
+    border: 3px black solid;
+    position: relative;
+    margin: 0 auto;
+    transform: translateY(20px);
+    z-index: 5;
+
+}
+.can-tab {
+    height: 60%;
+    width: 40%;
+    border-radius: 80%;
+    background-color: orange;
+    border: 3px black solid;
+    position: relative;
+    transform: translate(20px, -5px) skewY(20deg);
+    z-index: 5;
+}
+.can-tab-inner {
+    height: 55%;
+    width: 45%;
+    border-radius: 50%;
+    background-color: lightgray;
+    border: 3px orange solid;
+    transform: translate(-3px, -3px;);
+    float: right;
+
+}
+.can-opening {
+    height: 45%;
+    width: 40%;
+    border-radius: 0% 60% 60% 0;
+    background-color: black;
+    border: 1px black solid;
+    position: relative;
+    margin: -12% auto;
+    transform: translateX(25px);
+
+}
+.can-body {
+    width: 40%;
+    height: 65%;
+    background-color: gray;
+    border-radius: 20%;
+    border: 3px black solid;
+    position: relative;
+    margin: 0 auto;
+}
