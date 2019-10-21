@@ -91,4 +91,24 @@ getRandomFlavor = () => {
     let randomNum = Math.floor(Math.random() * Flavors.length);
     let randomFlavor = Flavors[randomNum].toUpperCase();
     output.innerHTML = randomFlavor;
+    getRandomColor();
 };
+
+getRandomColor = () => {
+    let elements = document.querySelectorAll('.can-color');
+    let randomNum = Math.floor(Math.random() * Colors.length);
+    let randomColor = Colors[randomNum].toUpperCase();
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].style.backgroundColor = randomColor;
+    }
+};
+
+const Colors = [
+    'blue',
+    'red',
+    'orange',
+    'yellow',
+    'pink',
+    'green',
+    'purple',
+];

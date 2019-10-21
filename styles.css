@@ -4,6 +4,10 @@
     height:300px;
 
 }
+
+.can-color {
+    background-color: gray;
+}
 .can-lid {
     width: 35%;
     height: 7%;
@@ -20,7 +24,6 @@
     height: 60%;
     width: 40%;
     border-radius: 80%;
-    background-color: orange;
     border: 3px black solid;
     position: relative;
     transform: translate(20px, -5px) skewY(20deg);
@@ -50,7 +53,6 @@
 .can-body {
     width: 40%;
     height: 65%;
-    background-color: gray;
     border-radius: 20%;
     border: 3px black solid;
     position: relative;
