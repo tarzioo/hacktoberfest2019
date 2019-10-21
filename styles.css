@@ -2,7 +2,7 @@
     /* position: absolute; */
     width: 300px;
     height:300px;
-
+    margin: 0 auto;
 }
 .can-lid {
     width: 35%;
@@ -71,6 +71,8 @@
 
 
 .random-flavor-btn {
+    display: block;
     background-image: linear-gradient(to right, red , yellow);
     height: 30px;
+    margin: 0 auto;
 }
