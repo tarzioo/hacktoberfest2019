@@ -32,7 +32,7 @@
     border-radius: 50%;
     background-color: lightgray;
     border: 3px orange solid;
-    transform: translate(-3px, -3px);
+    transform: translateX(-3px);
     float: right;
 
 }
