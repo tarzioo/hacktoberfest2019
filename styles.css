@@ -61,6 +61,7 @@
 }
 
 .flavor-div {
+    font-family: 'Exo', sans-serif;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     font-size: 22px;
@@ -71,6 +72,10 @@
 
 
 .random-flavor-btn {
+    font-family: 'Allura', cursive;
+    font-size: 30px;
+    color: darkslategray;
     background-image: linear-gradient(to right, red , yellow);
-    height: 30px;
+    padding: 12px;
+    cursor: pointer;
 }
