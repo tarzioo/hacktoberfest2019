@@ -20,7 +20,7 @@ const Flavors = [
     'Looking Cool',
     'Disappointment',
     'Raindrops',
-    'You’re a Hipster',
+    'You\'re a Hipster',
     'Literally Nothing',
     'We Tricked You and Your Wallet',
     'Vanilla Macaron',
@@ -39,7 +39,7 @@ const Flavors = [
     'Parsnip',
     'Twizzler-Dipped',
     'Fairy Dust',
-    'Summer Dreeze',
+    'Summer Breeze',
     'Half a Drop of Coffee',
     'Sourdough',
     'Stale White Bread',
@@ -89,6 +89,6 @@ const Flavors = [
 getRandomFlavor = () => {
     let output = document.querySelector('.flavor-div');
     let randomNum = Math.floor(Math.random() * Flavors.length);
-    let randomFlavor = Flavors[randomNum];
+    let randomFlavor = Flavors[randomNum].toUpperCase();
     output.innerHTML = randomFlavor;
 };
