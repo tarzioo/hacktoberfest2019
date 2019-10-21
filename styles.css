@@ -2,7 +2,9 @@
     /* position: absolute; */
     width: 300px;
     height:300px;
-
+    position: absolute;
+    top: 20%;
+    left: 40%;
 }
 
 .can-color {
@@ -80,4 +82,9 @@
     background-image: linear-gradient(to right, red , yellow);
     padding: 12px;
     cursor: pointer;
+    width: 300px;
+    height:100px;
+    position: relative;
+    top: 70%;
+    left: 40%;
 }
