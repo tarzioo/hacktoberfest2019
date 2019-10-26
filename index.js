@@ -165,7 +165,6 @@ getRandomColor = () => {
     }
 };
 
-<<<<<<< HEAD
 function startKeyFrames() {
     var bubble1 = document.getElementById("bubble-1");
     bubble1.classList.add("bubble-1-animated");
