@@ -160,7 +160,32 @@ getRandomColor = () => {
     }
 };
 
+
+function startKeyFrames() {
+    var bubble1 = document.getElementById("bubble-1");
+    bubble1.classList.add("bubble-1-animated");
+    var bubble2 = document.getElementById("bubble-2");
+    bubble2.classList.add("bubble-2-animated");
+    var bubble3 = document.getElementById("bubble-3");
+    bubble3.classList.add("bubble-3-animated");
+    setTimeout(function() {
+    bubble1.classList.remove("bubble-1-animated");
+    bubble2.classList.remove("bubble-2-animated");
+    bubble3.classList.remove("bubble-3-animated");
+  }, 3000);
+}
+
+const Colors = [
+    'blue',
+    'red',
+    'orange',
+    'yellow',
+    'pink',
+    'green',
+    'purple',
+];
 spookyTime = () => {
     console.log('i am spooooky!');
     //here is where we can add a spooky class to the window/document body to make ghost appear, set a timeout for 3? seconds, then remove the class and make ghost disappear
 }
+

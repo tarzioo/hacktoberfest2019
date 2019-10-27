@@ -10,6 +10,11 @@
     </head>
     <body>
         <div class="can-all">
+            <div class="bubbles-all">
+                <div id="bubble-1" class="bubble"></div>
+                <div id="bubble-2" class="bubble"></div>
+                <div id="bubble-3" class="bubble"></div>
+            </div>
             <div class="can-lid">
                 <div class="can-tab can-color">
                     <div class="can-tab-inner"></div>
@@ -20,7 +25,7 @@
                     <div class="flavor-div"></div>
             </div>
         </div>
-        <button type="button" class="random-flavor-btn" onclick="getRandomFlavor()">Drink Me</button>
+        <button type="button" class="random-flavor-btn" onclick="getRandomFlavor(); startKeyFrames();">Drink Me</button>
     </body>
     <script type="text/javascript">
         getRandomFlavor();
