@@ -132,9 +132,15 @@ const Colors = [
     'skyblue'
 ];
 
+let ghosty;
+
 spookyTime = () => {
-    console.log('i am spooooky!');
-    //here is where we can add a spooky class to the window/document body to make ghost appear, set a timeout for 3? seconds, then remove the class and make ghost disappear
+    clearTimeout(ghosty);
+    let ghostDiv = document.getElementById('ghost-all');
+    ghostDiv.style.display = 'block';
+    ghosty = setTimeout(() => {
+        ghostDiv.style.display = 'none';
+    }, 2500);
 }
 
 getRandomFlavor = () => {
