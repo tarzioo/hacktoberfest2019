@@ -85,14 +85,17 @@
     background-image: linear-gradient(to right, red , yellow);
     padding: 12px;
     margin-top: 16px;
+    margin-bottom: 16px;
     cursor: pointer;
     width: 300px;
     height: 100px;
     position: relative;
     top: 70%;
     left: 40%;
-    margin-top: 10%;
+    /* margin-top: 10%; */
 }
+
+/* START BUBBLES -------------------------- */
 
 .bubbles-all {
    /* animation-name: bubbles-float
@@ -217,3 +220,270 @@
         border-color: white;
     }           
 }
+
+/* END BUBBLES ---------------------- */
+
+/* START GHOSTY ---------- */
+
+
+#ghost-all {
+    display: none;
+    margin: 150px auto;
+    height: auto;
+    width: auto;
+    position: absolute;
+    z-index: 6;
+
+}
+.ghost-body {
+    background-color: rgba(125, 201, 227, 0.75);
+    height: 300px;
+    width: 245px;
+    border-radius: 90% 90% 0 0;
+    margin: auto;
+    background: rgba(183,222,237,1);
+    background: -moz-linear-gradient(top, rgba(183,222,237,1) 0%, rgba(125,201,227,1) 62%, rgba(89,193,227,1) 77%, rgba(33,180,226,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(183,222,237,1)), color-stop(62%, rgba(125,201,227,1)), color-stop(77%, rgba(89,193,227,1)), color-stop(100%, rgba(33,180,226,1)));
+    background: -webkit-linear-gradient(top, rgba(183,222,237,1) 0%, rgba(125,201,227,1) 62%, rgba(89,193,227,1) 77%, rgba(33,180,226,1) 100%);
+    background: -o-linear-gradient(top, rgba(183,222,237,1) 0%, rgba(125,201,227,1) 62%, rgba(89,193,227,1) 77%, rgba(33,180,226,1) 100%);
+    background: -ms-linear-gradient(top, rgba(183,222,237,1) 0%, rgba(125,201,227,1) 62%, rgba(89,193,227,1) 77%, rgba(33,180,226,1) 100%);
+    background: linear-gradient(to bottom, rgba(183,222,237,1) 0%, rgba(125,201,227,1) 62%, rgba(89,193,227,1) 77%, rgba(33,180,226,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', endColorstr='#21b4e2', GradientType=0 );
+}
+
+.eyes {
+    position: absolute;
+    margin: 100px 0;
+    
+}
+
+.eye-left {
+    background-color: black;
+    display: inline-block;
+    height: 40px;
+    width: 30px;
+    border-radius: 60%;
+    margin: 0 50px;
+
+}
+
+.eye-right {
+    background-color: black;
+    display: inline-block;
+    height: 40px;
+    width: 30px;
+    border-radius: 60%;
+    margin: 0 30px;
+}
+
+.mouth {
+    position: absolute;
+    background-color: black;
+    height: 50px;
+    width: 80px;
+    margin: 160px 83px;
+    border-radius: 0 0 50% 50%;
+}
+
+.tooth {
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    margin: auto 0 auto 12px;
+    display: inline-block;
+    border-radius: 0 0 90% 90%;
+
+}
+
+.tongue {
+    background-color: pink;
+    height: 20px;
+    width: 40px;
+    border-radius: 0 0 50% 50%;
+    margin: 6px 20px;
+}
+
+.tongue-detail {
+    background-color: red;
+    height: 20px;
+    width: 2px;
+    margin: auto;
+}
+.ruffles-all {
+    margin: auto 492px;
+    position: relative;
+    white-space: nowrap;
+
+
+}
+.ruffle {
+    background: rgba(33,180,226,1);
+    height: 40px;
+    width: 49px;
+    border-radius: 0 0 70% 70%;
+    display: inline-block;
+    margin: 0px -2px;
+
+
+}
+
+.shadow {
+    height: 30px;
+    width: 130px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 40px auto;
+    border-radius: 50%;
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px);
+}
+
+.floating {
+    animation-name: floating;
+    animation-timing-function: ease-in;
+    -webkit-animation-name: floating;
+
+    animation-duration: 20s;   
+    -webkit-animation-duration: 20s;
+
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0%, 20%);  
+    }
+    10% {
+         transform: translate(40%, -13%); 
+    }
+    20% {
+        transform:translate(-40%, 10%);
+    }
+    30% {
+        transform: translate(0%, 0%);  
+    }
+    40% {
+        transform: translate(-20%, -20%);  
+    }
+    50% {
+        transform: translate(-40%, 0%);  
+    }
+    60% {
+        transform: translate(40%, 10%);  
+    }
+    70% {
+        transform: translate(0%, -20%);  
+    }
+    80% {
+        transform: translate(0%, 20%);  
+    }
+    90% {
+        transform: translate(0%, -20%);  
+    }
+    100% {
+        transform: translate(0%, 20%);
+    }           
+}
+
+
+
+.floating-shadow {
+     animation-name: floating-shadow;
+    -webkit-animation-name: floating-shadow;
+
+    animation-duration: 20s;   
+    -webkit-animation-duration: 20s;
+
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes floating-shadow {
+    0% {
+        transform: scale(2);
+    }
+    10% {
+        transform: scale(.5);
+    }
+    20% {
+         transform: scale(1.5);
+    }
+    30% {
+        transform: scale(2);
+    }
+    40% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    60% {
+        transform: scale(2);
+    }
+    70% {
+        transform: scale(.5);
+    }
+    80% {
+        transform: scale(2);
+    }
+    90% {
+        transform: scale(.5);
+    }
+    100% {
+        transform: scale(2);
+    }           
+}
+
+.floating-shadow-height {
+     animation-name: floating-shadow-height;
+    -webkit-animation-name: floating-shadow-height;
+
+    animation-duration: 20s;   
+    -webkit-animation-duration: 20s;
+
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes floating-shadow-height {
+    0% {
+        transform: translateY(-50%);
+    }
+    10% {
+        transform: translateY(200%);
+    }
+    20% {
+         transform: translateY(50%);
+    }
+    30% {
+        transform: translateY(-50%);
+    }
+    40% {
+        transform: translateY(150%);
+    }
+    50% {
+        transform: translateY(0%);
+    }
+    60% {
+        transform: translateY(-100%);
+    }
+    70% {
+        transform: translateY(200%);
+    }
+    80% {
+        transform: translateY(-50%);
+    }
+    90% {
+        transform: translateY(200%);
+    }
+    100% {
+        transform: translateY(-50%);
+    }           
+}
+
+
+
+/* END GHOSTY ------------------ */
